@@ -10,20 +10,35 @@
 // console.log(el2)
 
 // .html
-const el = $("#text")
-el.html("Hello World")
+// const el = $("#text")
+// el.html("Hello World")
 
-// .attr()
+// // .attr()
+// const inp = $("input")
+// inp.attr("type", "checkbox")
+
+// // add & remove class
+// el.addClass("red")
+// el.addClass("blue")
+// el.removeClass("blue")
+
+// //css()
+// inp.css({
+//     border: "1px solid red",
+//     marginleft: "100px"
+// })
+
+// const el = document.getElementById("text")
+// el.addEventListener("mouseenter", function() {
+//     el.style.border = "1px solid red"
+// })
+
+const el = $("text")
+el.mouseenter(function() {
+    el.css("boeder", "1px solid red")
+} )
+
 const inp = $("input")
-inp.attr("type", "checkbox")
-
-// add & remove class
-el.addClass("red")
-el.addClass("blue")
-el.removeClass("blue")
-
-//css()
-inp.css({
-    border: "1px solid red",
-    marginleft: "100px"
+inp.focus(function() {
+    inp.css("border", "1px solid blue")
 })
